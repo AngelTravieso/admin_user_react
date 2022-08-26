@@ -38,6 +38,8 @@ export const LoginPage = () => {
           >
             <Button
               variant="contained"
+              component={ RouterLink }
+              to="/"
               fullWidth
               sx={{ mb: 2 }}
             >

@@ -1,11 +1,13 @@
-import { Routes, Route } from "react-router-dom"
-import { LoginPage, RegisterPage } from "../auth/pages"
-import { AuthRouter } from "../auth/routes/AuthRouter"
+import { Routes, Route } from "react-router-dom";
+import { AuthRoutes } from "../auth/routes/AuthRoutes";
+import { UsersRoutes } from "../users/routes/UsersRoutes";
 
 export const AppRouter = () => {
   return (
     <Routes>
-        <Route path="/auth/*" element={ <AuthRouter /> } />
+        <Route path="/auth/*" element={ <AuthRoutes /> } />
+
+        <Route path="/*" element={ <UsersRoutes /> } />
     
 
     </Routes>
